@@ -15,8 +15,9 @@ class LocationExtension < Radiant::Extension
     # Layouts Routes
     map.with_options(:controller => 'admin/location') do |location|
       location.location_index    'admin/locations',                      :action => 'index'
-      location.location_edit     'admin/locations/edit/:id',             :action => 'edit'
       location.location_new      'admin/locations/new',                  :action => 'new'
+      location.location_edit     'admin/locations/edit/:id',             :action => 'edit'
+      location.location_update   'admin/locations/update/:id',           :action => 'update'
       location.location_remove   'admin/locations/remove/:id',           :action => 'remove'  
     end
   end
