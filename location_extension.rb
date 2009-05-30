@@ -18,6 +18,7 @@ class LocationExtension < Radiant::Extension
       location.location_new      'admin/locations/new',                  :action => 'new'
       location.location_edit     'admin/locations/edit/:id',             :action => 'edit'
       location.location_update   'admin/locations/update/:id',           :action => 'update'
+      location.location_create   'admin/locations/create',               :action => 'create'
       location.location_remove   'admin/locations/remove/:id',           :action => 'remove'  
     end
   end
