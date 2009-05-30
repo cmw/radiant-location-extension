@@ -48,6 +48,11 @@ class LocationExtension < Radiant::Extension
         edit.form.concat %w{edit_title edit_group edit_full_address edit_website_url edit_page_path edit_latitude edit_longitude edit_manual_geocode}
         edit.form_bottom.concat %w{edit_timestamp edit_buttons}
       end
+      location.new = Radiant::AdminUI::RegionSet.new do |edit|
+        edit.main.concat %w{edit_header edit_form}
+        edit.form.concat %w{edit_title edit_group edit_full_address edit_website_url edit_page_path edit_latitude edit_longitude edit_manual_geocode}
+        edit.form_bottom.concat %w{edit_timestamp edit_buttons}
+      end
     end
   end
   
